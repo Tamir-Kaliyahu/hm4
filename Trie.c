@@ -84,7 +84,7 @@ void printTrie(node* head,char word[], int pos){
     if(curtNode == NULL) return;
     if(curtNode->count > 0){
         word[pos] = '\0';
-        printf("%s %lu\n",word,curtNode->count);
+        printf("%s %lu \n",word,curtNode->count);
     }
 
     for(int i = 0; i < NUM_LETTERS; i++){
@@ -136,6 +136,6 @@ void printrevTrie(node* head,char word[], int pos){
     }
     if(curtNode->count > 0){
         word[pos] = '\0';
-        printf("%s %lu\n",word,curtNode->count);
+        printf("%s %lu \n",word,curtNode->count);
     }
 }
